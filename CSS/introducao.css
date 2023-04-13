@@ -1,0 +1,101 @@
+/* Introdução */
+
+.introducao {
+
+    max-width: 960px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    align-items: center;
+  }
+  
+  .introducao h1 {
+    font-size: 3rem;
+    line-height: 1.125;
+    margin-bottom: 30px;
+    color: var(--bg-color2);
+    position: relative;
+  }
+
+  
+  .introducao p {
+    font-size: 1.5rem;
+    color: #525252;
+  }
+
+  .introducao img {
+    border-radius: 10px;
+  }
+
+  .introducao-btn{
+    color: white;
+    background: var(--color2);
+    height: 60px;
+    width: 80%;
+    border: none;
+    border-radius:30px;
+    cursor: pointer;
+  }
+
+  .introducao-btn a {
+    font-weight: bold;
+    color: var(--bg-color);
+    font-size: 1.5em;
+  }
+
+  .introducao-btn a:hover {
+    color: var(--color3)
+  }
+
+  .nome {
+    display: none;
+    width: 22ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(22), blinking 1s infinite step-end alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+  
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
+  
+
+  
+  @media (max-width: 800px) {
+    .introducao {
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    .introducao h1 {
+      font-size: 2rem;
+    }
+
+
+  }
+  
+  @media (max-width: 500px) {
+    .introducao {
+      grid-template-columns: 1fr;
+    }
+    .introducao img {
+      display: none;
+    }
+
+    .introducao h1 {
+        font-size: 1.5rem;
+      }
+      .nome{
+        display: block;
+    }
+  }
