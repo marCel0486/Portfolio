@@ -37,6 +37,7 @@
     border: none;
     border-radius:30px;
     cursor: pointer;
+    
   }
 
   .introducao-btn a {
@@ -46,7 +47,7 @@
   }
 
   .introducao-btn a:hover {
-    color: var(--color3)
+   color: var(--color3)
   }
 
   .nome {
