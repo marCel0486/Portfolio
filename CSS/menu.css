@@ -45,9 +45,9 @@ header{
     color: var(--color3);
 }
 
-.btn-mobile{
+.menu-mobile{
     display: none;
-    background: var(--color2);
+    
     
 }
 
@@ -83,46 +83,34 @@ header{
         font-weight: bold;
     }
 
-    .btn-mobile {
-        display: flex;
-        padding: .5rem 0.5rem;
-        margin: 5px;
-        font-size: 1rem;
-        border: none;
+    .menu-mobile {
+        display: block;
         cursor: pointer;
+        
     }
 
-    #hamburguer {
-        display: block;
-        border-top: 3px solid;
-        width: 20px;
-        color: var(--bg-color);
-
+    .menu-mobile div{
+       width: 30px;
+       height: 2px;
+       margin: 8px;
+       background: #fff;
+       transition: 0.3s;
     }
 
-    #hamburguer::after, #hamburguer::before {
-        content: '';
-        display: block;
-        width: 20px;
-        height: 3px;
-        background: currentColor;
-        margin-top: 5px;
-        transition: .3s;
-        position: relative;
-    }
+    #nav.active .line1 {
+       transform: rotate(-45deg) translate(-8px, 8px);
+   }
 
-    #nav.active #hamburguer {
-        border-top-color: transparent;
-    }
+   #nav.active .line2{
+       opacity: 0;
+       
+   }
 
-    #nav.active #hamburguer::before{
-        transform: rotate(135deg);
-    }
+   #nav.active .line3{
+       
+       transform: rotate(45deg) translate(-5px, -7px);
+   }
 
-    #nav.active #hamburguer::after{
-        transform: rotate(-135deg);
-        top: -7px;
-    }
     
 }
 

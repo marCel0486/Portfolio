@@ -72,7 +72,7 @@ initeScrollSuave()
 
 //menu mobile
 
-const btnMobile = document.querySelector('.btn-mobile')
+const btnMobile = document.querySelector('.menu-mobile')
 
 function toggleMenu(event) {
     if(event.type === 'touchstart') event.preventDefault()
