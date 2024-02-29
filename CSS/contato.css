@@ -1,0 +1,10 @@
+.contato{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.what {
+    width: 80%;
+    
+}
